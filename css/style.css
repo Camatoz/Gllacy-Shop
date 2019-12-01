@@ -107,6 +107,18 @@ h2 {
   border-radius: 31px;
 }
 
+.gift-but {
+  font-size: 22px;
+}
+
+.gift-marcup {
+  margin: 40px 0 20px 300px;
+}
+
+.gift-marcup2 {
+  margin: 40px 0 20px 265px;
+}
+
 .but-choice {
   display: flex;
   align-items: center;
@@ -196,6 +208,10 @@ header {
 .ad {
   display: flex;
   justify-content: flex-start;
+  color: #ffffff;
+}
+
+.ad-both {
 }
 
 /* Section With Ice-Cream */
@@ -215,6 +231,10 @@ header {
 .ice-cream {
   margin-right: 27px;
 }
+
+/* .ice-cream:last-child {
+  margin-right: 0;
+} */
 
 .ice-cream-pic1 {
   display: block;
@@ -335,4 +355,242 @@ header {
 .ice-cream-text {
   margin-top: 20px;
   text-align: center;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.head-gift {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ad-bold {
+  margin: 20px;
+}
+
+/* Section With Waffels */
+.container-waffels {
+  position: relative;
+  z-index: 1;
+}
+
+.container-waffels-markup {
+  position: absolute;
+  z-index: 5;
+  top: 42em;
+  left: 0em;
+}
+
+.waffles {
+  margin-left: 27px;
+  display: block;
+  background: url(../img/shop-fon.png) no-repeat center / contain;
+  width: 1146px;
+  height: 306px;
+}
+
+.waffles-text {
+  font-size: 24px;
+  color: #323232;
+  padding: 20px;
+}
+
+.waffles-diskription {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.waffles-dis-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.waffles-dis-left {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+.waffles-pic1 {
+  display: block;
+  background: url(../img/shop1.png) no-repeat center / contain;
+  width: 49px;
+  height: 49px;
+  flex-basis: 23%;
+  margin-top: -20px;
+}
+.waffles-pic2 {
+  display: block;
+  background: url(../img/shop3.png) no-repeat center / contain;
+  width: 49px;
+  height: 49px;
+  flex-basis: 24%;
+  margin-top: -20px;
+}
+.waffles-pic3 {
+  display: block;
+  background: url(../img/shop2.png) no-repeat center / contain;
+  width: 49px;
+  height: 49px;
+  flex-basis: 30%;
+  margin-top: -20px;
+}
+.waffles-pic4 {
+  display: block;
+  background: url(../img/shop4.png) no-repeat center / contain;
+  width: 49px;
+  height: 49px;
+  flex-basis: 30%;
+  margin-top: -20px;
+}
+
+/* Section With Submit form */
+
+.container-blog {
+  position: relative;
+  z-index: 1;
+}
+
+.send-all {
+  position: absolute;
+  z-index: 5;
+  top: 64em;
+  left: 0em;
+  display: flex;
+  margin-left: 27px;
+}
+
+.blog {
+  display: block;
+  background: url(../img/blog-fon.png) no-repeat center / contain;
+  width: 560px;
+  height: 220px;
+}
+
+.form {
+  display: block;
+  background: url(../img/blog-fon2.png) no-repeat center / contain;
+  width: 560px;
+  height: 220px;
+  margin-left: 27px;
+}
+
+.blog-content {
+  margin-left: 20px;
+}
+.blog-text {
+  color: #323232;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+a > span {
+  color: #323232;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid #323232;
+}
+
+.form-fon {
+  background: #f8f7f4;
+  width: 550px;
+  height: 210px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.form-text {
+  color: #5a5a5a;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 508px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.input {
+  padding: 8px;
+  border: 2px solid #d3d3d2;
+  min-width: 345px;
+  background: #ffffff;
+  color: #999999;
+  border-radius: 5px;
+}
+
+.subscribe {
+  font-size: 14px;
+  background: #e84d36;
+  color: #fff;
+  padding: 12px 19px;
+  border: 0;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Section With Map-Address */
+
+.container-map {
+  position: relative;
+  z-index: 1;
+}
+
+.map {
+  position: absolute;
+  z-index: 5;
+  top: 80.5em;
+  left: 0em;
+  display: block;
+  background: url(../img/map.png) no-repeat center / contain;
+  width: 1200px;
+  height: 429px;
+}
+
+.map-ice {
+  display: block;
+  background: url(../img/on-map.png) no-repeat center / contain;
+  width: 218px;
+  height: 142px;
+  margin: 9em 0 0 16em;
+}
+
+.address {
+  background: #ffffff;
+  width: 302px;
+  height: 305px;
+  border-radius: 20px;
+  margin-top: 3.5em;
+  margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+}
+
+.map-address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map-lit {
+    font-size: 14px;
+    color: #343434;
+}
+
+.map-big {
+    font-size: 18px;
+    color: #3b3b3b;
+    font-weight: bold;
 }
