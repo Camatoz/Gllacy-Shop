@@ -110,6 +110,25 @@ h2 {
   box-shadow: 0 2px 2px #bf6351;
 }
 
+.h-but:hover {
+  background: #db4c38;
+  background: -moz-linear-gradient(top, #db4c38 0%, #f26843 100%);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, #db4c38),
+    color-stop(100%, #f26843)
+  );
+  background: -webkit-linear-gradient(top, #db4c38 0%, #f26843 100%);
+  background: -o-linear-gradient(top, #db4c38 0%, #f26843 100%);
+  background: -ms-linear-gradient(top, #db4c38 0%, #f26843 100%);
+  background: linear-gradient(to bottom, #db4c38 0%, #f26843 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db4c38', endColorstr='#f26843', GradientType=0 );
+
+  box-shadow: 0px 2px 4px -1px #3d3d3d inset;
+  /* box-shadow: 0 2px 2px #3d3d3d; */
+}
+
 .gift-but {
   font-size: 22px;
 }
@@ -218,6 +237,11 @@ header {
 
 .ice-cream {
   margin-right: 27px;
+}
+
+.ice-cream:hover {
+ background: #9DB1A5;
+ border-radius: 15px;
 }
 
 .ice-cream-pic1 {
@@ -532,6 +556,7 @@ form {
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: 500;
+  box-shadow: 0 2px 2px #bf6351;
 }
 
 /* Section With Map-Address */
@@ -631,9 +656,22 @@ form {
   margin-left: 27px;
 }
 
+.footer-social {
+  opacity: 0.7;
+}
+
+.footer-social:hover {
+  opacity: 1;
+}
+
+.footer-social:active {
+  color: red;
+}
+
 .footer-doc {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
   grid-gap: 1em;
   margin: 0 20%;
 }
