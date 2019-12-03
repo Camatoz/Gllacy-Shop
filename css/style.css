@@ -14,11 +14,16 @@ li {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #849d8f;
+  background: #849d8f url(../img/lite.png) no-repeat center / contain;
+}
+
+.global-header {
+  height: 675px;
+  background: url(../img/ice-left.png) no-repeat 33% 90px,
+    url(../img/ice-right.png) no-repeat 68% 140px;
 }
 
 .container {
-  background: #849d8f;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -32,6 +37,7 @@ body {
 
 nav > a {
   margin-left: 20px;
+  border-bottom: 1px solid #9db1a5;
 }
 
 .nav-logo {
@@ -71,19 +77,28 @@ h2 {
 
 .choice-page {
   display: flex;
-  margin-left: 27px;
 }
 
 .choice-page > a {
-  margin-top: 497px;
   margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.head-title {
+  margin-bottom: 30px;
 }
 
 .dot {
   display: block;
-  background: url(../img/round2.png) no-repeat center / contain;
+  border: 2px solid white;
+  border-radius: 50%;
   width: 21px;
   height: 21px;
+  margin-top: 35px;
+}
+
+.dot:hover {
+  background: white;
 }
 
 .h-but {
@@ -129,6 +144,18 @@ h2 {
   /* box-shadow: 0 2px 2px #3d3d3d; */
 }
 
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+/* Container Gifts */
+
 .gift-but {
   font-size: 22px;
 }
@@ -139,64 +166,6 @@ h2 {
 
 .gift-marcup2 {
   margin: 40px 0 20px 265px;
-}
-
-.head-but {
-  flex-basis: 82%;
-}
-
-header {
-  position: relative;
-  z-index: 1;
-}
-
-#layer1 {
-  position: absolute;
-  display: block;
-  background: url(../img/ice-left.png) no-repeat center / contain;
-  width: 372px;
-  height: 584px;
-  z-index: 3;
-  top: 6em;
-  left: 265px;
-}
-#layer2 {
-  position: absolute;
-  display: block;
-  background: url(../img/ice-right.png) no-repeat center / contain;
-  width: 333px;
-  height: 519px;
-  z-index: 2;
-  top: 9em;
-  left: 580px;
-}
-#layer3 {
-  position: absolute;
-  display: block;
-  background: url(../img/lite.png) no-repeat center / contain;
-  width: 1045px;
-  height: 881px;
-  z-index: 0;
-  top: -3em;
-  left: 5em;
-}
-#layer4 {
-  position: absolute;
-  z-index: 4;
-  top: 24.7em;
-  left: 17em;
-}
-#layer5 {
-  position: absolute;
-  z-index: 4;
-  top: 36em;
-  left: 30.5em;
-}
-#layer6 {
-  position: absolute;
-  z-index: 5;
-  top: 40.5em;
-  left: 1.5em;
 }
 
 .ad-left {
@@ -214,34 +183,32 @@ header {
   height: 229px;
 }
 
-.ad {
+.gifts {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
+  margin: 0 27px;
   color: #ffffff;
+}
+
+.ad-bold {
+  margin: 20px;
 }
 
 /* Section With Ice-Cream */
 
-.container-ice-cream {
+.ice-cream-container {
   position: relative;
-  z-index: 1;
 }
 
 .ice-markup {
-  position: absolute;
-  z-index: 5;
-  top: 19.5em;
-  left: 1.5em;
   display: flex;
-}
-
-.ice-cream {
-  margin-right: 27px;
+  justify-content: space-between;
+  margin: 40px 27px 0 27px;
 }
 
 .ice-cream:hover {
- background: #9DB1A5;
- border-radius: 15px;
+  background: #9db1a5;
+  border-radius: 25px;
 }
 
 .ice-cream-pic1 {
@@ -264,9 +231,19 @@ header {
 }
 .ice-cream-pic4 {
   display: block;
-  background: url(../img/ice-cream4.png) no-repeat center / contain;
+   background: url(../img/ice-cream4.png) no-repeat center / contain; 
   width: 267px;
   height: 267px;
+} 
+
+ .ice-cream-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+} 
+
+.ice-c-text {
+  border-bottom: 1px solid #9db1a5;
 }
 
 .ice-hit1 {
@@ -278,36 +255,6 @@ header {
   z-index: 6;
   top: 0em;
   left: 0em;
-}
-.ice-hit2 {
-  display: block;
-  background: url(../img/hit.png) no-repeat center / contain;
-  width: 61px;
-  height: 61px;
-  position: absolute;
-  z-index: 6;
-  top: 0em;
-  left: 18.5em;
-}
-.ice-hit3 {
-  display: block;
-  background: url(../img/hit.png) no-repeat center / contain;
-  width: 61px;
-  height: 61px;
-  position: absolute;
-  z-index: 6;
-  top: 0em;
-  left: 36.7em;
-}
-.ice-hit4 {
-  display: block;
-  background: url(../img/hit.png) no-repeat center / contain;
-  width: 61px;
-  height: 61px;
-  position: absolute;
-  z-index: 6;
-  top: 0em;
-  left: 55.1em;
 }
 
 .ice-price-sing {
@@ -325,30 +272,6 @@ header {
   top: 13em;
   left: 0;
 }
-.ice-price2 {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 6;
-  top: 13em;
-  left: 18.5em;
-}
-.ice-price3 {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 6;
-  top: 13em;
-  left: 36.8em;
-}
-.ice-price4 {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 6;
-  top: 13em;
-  left: 55.2em;
-}
 
 .ice-price-num {
   font-size: 44px;
@@ -360,10 +283,6 @@ header {
   font-weight: 700;
 }
 
-.ice-cream-text {
-  margin-top: 20px;
-  text-align: center;
-}
 
 h3 {
   font-size: 35px;
@@ -376,20 +295,17 @@ h3 {
   font-weight: bold;
 }
 
-.ad-bold {
-  margin: 20px;
-}
 
 /* Section With Waffels */
 .container-waffels {
-  position: relative;
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .container-waffels-markup {
-  position: absolute;
+  /* position: absolute;
   z-index: 5;
-  top: 42em;
+  top: 42em; */
 }
 
 .waffles {
@@ -461,14 +377,14 @@ h3 {
 /* Section With Submit form */
 
 .container-blog {
-  position: relative;
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .send-all {
-  position: absolute;
+  /* position: absolute;
   z-index: 5;
-  top: 64em;
+  top: 64em; */
   display: flex;
   margin-left: 27px;
 }
@@ -562,14 +478,14 @@ form {
 /* Section With Map-Address */
 
 .container-map {
-  position: relative;
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .map {
-  position: absolute;
+  /* position: absolute;
   z-index: 5;
-  top: 80.5em;
+  top: 80.5em; */
   display: block;
   background: url(../img/map.png) no-repeat center / contain;
   width: 1200px;
@@ -634,15 +550,15 @@ form {
 /* FOOTER */
 
 .container-footer {
-  position: relative;
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
 }
 
 .footer-content {
-  position: absolute;
+  /* position: absolute;
   z-index: 5;
   top: 110em;
-  left: 0;
+  left: 0; */
   padding-bottom: 2em;
   min-width: 1200px;
   display: flex;
